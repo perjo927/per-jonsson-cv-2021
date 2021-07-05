@@ -1,4 +1,6 @@
-# React Webpack 5 Starter
+# Per Jonsson's CV
+
+Based on [perjo927-react-webpack-5-starter](https://github.com/perjo927/react-webpack5-starter).
 
 Gives you a minimal setup to get started with React and Webpack 5. Also comes with linting, formatting and a test setup, plus a Github Action for continuous integration.
 
