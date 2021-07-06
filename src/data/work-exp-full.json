@@ -1,0 +1,56 @@
+[
+  {
+    "company": "Expressen",
+    "period": "2021/03 - ",
+    "title": "Web Developer (Consultant)",
+    "description": "Worked with the Expressen Web Site. It is a full stack JavaScript application with a server side rendered vanilla JS front-end plus a Node.js (Express) backend. The team focused heavily on performance, compliance and UI improvements using A/B testing and data analytics. The team’s development philosophy was based on TDD and mob programming as best practices."
+  },
+  {
+    "company": "Trustly",
+    "period": "2020/09 - 2021/03",
+    "title": "Front-End Developer (Consultant)",
+    "description": "Was part of a migration project where a legacy platform and web client moved to newer technologies. I worked on a checkout client written in React as well as some surrounding services and also helped the team improve their Splunk monitoring."
+  },
+  {
+    "company": "Kindred",
+    "period": "2020/01 - 2021/07",
+    "title": "Front-End Developer (Consultant)",
+    "description": "This project centered around compliance, as the team worked on a micro-frontend React application responsible for customer verification. My role was to introduce TypeScript, improve unit testing plus test automation (Cypress) as well as monitoring (Splunk)."
+  },
+  {
+    "company": "NetEnt",
+    "period": "2019/08 - 2019/12",
+    "title": "Front-End Developer (Consultant)",
+    "description": "I continued with my previous work but as a consultant."
+  },
+  {
+    "company": "DevCode",
+    "period": "2019/08 - ",
+    "title": "Consultant",
+    "description": "This is the company where I am currently hired as an employee."
+  },
+  {
+    "company": "NetEnt",
+    "period": "2017/08 - 2019/",
+    "title": "Front-End Developer (Employee)",
+    "description": "At NetEnt I was a part of the Game Framework department, helping the Game teams with deliveries that they could use to build games upon. Several generations of HTML5 / JavaScript game engines/frameworks were being built and improved upon, including tooling around it. We developed those using ES5/ES6+ JavaScript, TypeScript, React, Redux, GraphQL, HTML, CSS, etc."
+  },
+  {
+    "company": "Betsson",
+    "period": "2014/08 - 2017/07",
+    "title": "Web Developer (Employee)",
+    "description": "Initially hired as a trainee, I later became part of a Site team working with B2B operations against the Turkish market. Technologies were mainly C# and .NET on the back-end and TypeScript/JavaScript, Angular on the front-end."
+  },
+  {
+    "company": "Ericsson",
+    "period": "2014/03 - 2014/08",
+    "title": "Systems Developer (Thesis Worker)",
+    "description": "Upon request I built a web survey system in Node.js / Meteor. The system was able to generate employee surveys, as well as analyze them and generate reports."
+  },
+  {
+    "company": "Linköping university",
+    "period": "2014/01 - 2014/06",
+    "title": "Teacher's Assistant (Employee)",
+    "description": "Helped out with tutoring and grading assignments in various programming courses."
+  }
+]

@@ -17,6 +17,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      favicon: path.resolve(__dirname, "..", "./src/assets/favicon.ico"),
       title: "Per Jonsson | Web Developer",
       env: "development",
       template: path.resolve(__dirname, "..", "./src/index.html"),

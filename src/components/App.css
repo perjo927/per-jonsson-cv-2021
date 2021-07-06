@@ -23,7 +23,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   text-align: center;
 }
 
@@ -47,13 +48,29 @@ h3 {
   font-size: 1.5em;
 }
 
-h4 {
+h4,
+.contrast-title {
   color: var(--contrast-color);
   font-size: 0.8em;
   font-weight: 400;
   line-height: 3em;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 0.4vw;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    letter-spacing: 1.3em;
+  }
+  h2 {
+    letter-spacing: 0.8em;
+  }
+  h3 {
+    letter-spacing: 0.9em;
+  }
+  h4 {
+    letter-spacing: 0.5em;
+  }
 }
 
 .headline {
@@ -63,7 +80,8 @@ h4 {
 
 h2 span,
 h3 span,
-h4 span {
+h4 span,
+h6 span {
   margin: 0.25em;
 }
 
@@ -86,7 +104,7 @@ h3 span:nth-child(even) {
 h5 {
   width: 100%;
   text-align: center;
-  border-bottom: 0.25em solid var(--text-color);
+  border-bottom: 0.15em dotted var(--text-color);
   line-height: 0;
   margin: 0 auto;
   font-size: 1.2em;
@@ -96,6 +114,28 @@ h5 span {
   padding: 0 1em;
   background: var(--bg-color);
   color: var(--title-color);
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 0 0;
+  font-weight: 200;
+}
+
+h6 span {
+  text-transform: uppercase;
+}
+
+h6.title {
+  font-size: 0.8em;
+  /* font-style: italic; */
+  text-transform: uppercase;
+}
+
+h6 span.period {
+  color: var(--link-color);
 }
 
 .app-container {
@@ -151,6 +191,7 @@ a {
   transition: 0.2s;
   text-transform: uppercase;
   font-weight: 600;
+  cursor: pointer;
 }
 
 a.selected {
@@ -165,11 +206,18 @@ a:hover {
 #menu-close,
 #download {
   width: 5vw;
+  cursor: pointer;
 }
 
 #menu-open span,
 #menu-close span {
   z-index: 0;
+}
+
+#menu-open:hover,
+#menu-close:hover,
+#download:hover {
+  color: var(--contrast-color);
 }
 
 #menu-close {
@@ -179,7 +227,7 @@ a:hover {
   font-size: 2em;
 }
 
-.app-content {
+.content-container {
   width: 100%;
   height: 95vh;
   display: flex;
@@ -194,4 +242,91 @@ main {
 
 section {
   padding: 2em 12vw;
+}
+
+.back-and-forth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.back-and-forth span:hover {
+  color: var(--text-color);
+  font-weight: 900;
+}
+
+p {
+  padding: 0 10vw;
+  text-align: justify;
+}
+
+p.contact {
+  text-align: center;
+}
+
+.education,
+.work {
+  padding: 1em;
+  border-bottom: 1px dotted var(--text-color);
+  margin-bottom: 1em;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 2em;
+  background: var(--link-color);
+}
+
+.skills p,
+.hobbies p,
+.personality p,
+.education p {
+  text-align: center;
+}
+
+.temperaments {
+  display: flex;
+  flex-direction: column;
+}
+
+.temperament {
+  margin: 1em 0;
+}
+
+.bar {
+  width: 100%;
+  height: 1em;
+  background-color: var(--link-color);
+  border-radius: 0.5em;
+}
+
+
+.fill {
+  background-color: var(--title-color);
+  border-radius: 0.5em;
+  height: 0.9em;
+}
+
+a.social {
+  padding: 0.5em 0;
+  font-size: 1em;
+  color: var(--text-color);
+  transition: 0.2s;
+  font-weight: 200;
+  cursor: pointer;
+  text-transform: none;
+  text-align: center;
+}
+
+a.social:hover {
+  color: var(--contrast-color);
 }
