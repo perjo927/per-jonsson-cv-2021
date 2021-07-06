@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  devtool: "source-map",
   mode: "production",
   optimization: {
     splitChunks: { chunks: "all" },
