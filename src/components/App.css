@@ -1,9 +1,197 @@
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@100;300;400;900&display=swap");
+
+:root {
+  --title-color: #00d4ff;
+  --contrast-color: #ffdf62;
+  --text-color: #fffeff;
+  --link-color: rgba(255, 254, 255, 0.5);
+  --bg-color: #31353e;
+  --bg-color-dark: #1b1d22;
+}
+
+html,
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
   font-size: 12px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+h1 {
+  border: 1px dotted var(--text-color);
+  border-inline: 0;
+  font-weight: 100;
+  letter-spacing: 2vw;
+  line-height: 2em;
+  font-size: 1em;
+  align-self: flex-start;
+}
+
+h2 {
+  letter-spacing: 2vw;
+  font-size: 2em;
+}
+
+h3 {
+  letter-spacing: 1.75vw;
+  font-size: 1.5em;
+}
+
+h4 {
+  color: var(--contrast-color);
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 3em;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.4vw;
+}
+
+.headline {
+  font-family: "Bebas Neue", cursive;
+  line-height: 0;
+}
+
+h2 span,
+h3 span,
+h4 span {
+  margin: 0.25em;
+}
+
+h2 span:nth-child(odd) {
+  color: var(--title-color);
+}
+
+h2 span:nth-child(even) {
+  color: var(--text-color);
+}
+
+h3 span:nth-child(odd) {
+  color: var(--text-color);
+}
+
+h3 span:nth-child(even) {
+  color: var(--title-color);
+}
+
+h5 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.25em solid var(--text-color);
+  line-height: 0;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+h5 span {
+  padding: 0 1em;
+  background: var(--bg-color);
+  color: var(--title-color);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+  margin: 0;
+}
+
+nav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-color-dark);
+  border-right: 0.75em solid var(--contrast-color);
+  overflow-x: hidden;
+  padding-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2em;
+}
+
+nav.open {
+  width: 19em;
+  transition: 0.3s;
+}
+
+nav.closed {
+  transform: translateX(-17em);
+  transition: 0.25s;
+}
+
+a {
+  padding: 0.5em 0;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: var(--link-color);
+  display: block;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+a.selected {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--contrast-color);
+}
+
+#menu-open,
+#menu-close,
+#download {
+  width: 5vw;
+}
+
+#menu-open span,
+#menu-close span {
+  z-index: 0;
+}
+
+#menu-close {
+  position: absolute;
+  top: 0.4em;
+  left: 0.8em;
+  font-size: 2em;
+}
+
+.app-content {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
 }
 
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  padding: 2em 12vw;
 }

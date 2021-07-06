@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "The Economist Auth",
+      title: "Per Jonsson | Web Developer",
       env: "production",
       template: path.resolve(__dirname, "..", "./src/index.html"),
       filename: "index.html",
