@@ -80,7 +80,7 @@ export const App = () => {
           id="download"
           onClick={() => {
             window.open(
-              "https://drive.google.com/file/d/1FZ3rXd89acqjRn8HfiI2iapIihCwGN1j/view?usp=sharing",
+              "https://drive.google.com/file/d/1kKCWyEG5LIo2D1ksi2L2nYxvsZKw2xSD/view?usp=sharing",
               "_blank"
             );
           }}
